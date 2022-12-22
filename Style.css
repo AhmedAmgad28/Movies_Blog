@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+    font-family: poppins;
+    background-color:rgb(56, 66, 62);   
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    padding: 1rem 2rem 0;
+    background-color: rgba(48, 55, 51, 0.587);
+}
+header .NavContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.Img1{
+    width: 60px;
+}
+.NavLogo a{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(19, 187, 162);
+    font-weight: bold;
+}
+.NavLogo span{
+    padding-left: 10px;
+}
+.NavLinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px 0;
+    margin-right: 20px;
+}
+.NavLink{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+.Link{
+    color: rgb(19, 187, 162);
+    font-weight: 600;
+    cursor: pointer;
+}
+.NavLink :hover{
+    color:rgb(255, 255, 255);
+}
+.MainContainer{
+    width: 100%;
+    background-color: rgba(48, 55, 51, 0);
+    padding: 10px 0px;
+    text-align: center;
+    margin: auto;
+    color: rgb(19, 187, 162);
+}
+.MainContainer h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+#Movies,#Moviespage,#Tvshows,#Actors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Card,.CardMovie,.CardTv,.CardActor{
+    width: 300px;
+    color: rgb(19, 187, 162);
+    border-radius: 10px;
+    background-color: rgba(48, 55, 51, 0.587);
+    padding: 6px;
+    margin: 10px;
+}
+.Card img,.CardMovie img,.CardTv img,.CardActor img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Card,.CardMovie,.CardTv,.CardActor :hover{
+    background-color: rgba(93, 104, 98, 0.587);
+}
+#Name{
+    color: rgb(19, 187, 162);
+}
+#Name:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
