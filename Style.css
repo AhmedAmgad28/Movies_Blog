@@ -82,7 +82,7 @@ header .NavContainer{
     border-radius: 10px;
     cursor: pointer;
 }
-.Card,.CardMovie,.CardTv,.CardActor :hover{
+.Card:hover,.CardMovie:hover,.CardTv:hover,.CardActor:hover{
     background-color: rgba(93, 104, 98, 0.587);
 }
 #Name{
