@@ -20,11 +20,12 @@ function getMovies(Url){
 function showMovie(data){
   mainM.innerHTML="";    //emptying the div that will be filled with data
   data.forEach(movie => {
-    const {title,poster_path} = movie;
+    const {title,poster_path,id} = movie;
     const movieElement = document.createElement("div");   //Create Element
     movieElement.classList.add("CardMovie");    //Add Class to the element
-    movieElement.innerHTML = `<img src="${imgPath + poster_path}" alt="Movie1">
-        <h2 id="Name">${title}</h2>`;
+    movieElement.innerHTML = `<a href="/Pages/MovieDetails.html?id=${id}">
+    <img src="${imgPath + poster_path}" alt="Movie1">
+    <h2 id="Name">${title}</h2></a>`;
 
     mainM.appendChild(movieElement);
   });

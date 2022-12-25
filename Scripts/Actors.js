@@ -22,11 +22,12 @@ function getShows(Url){
 function showActor(data){
   mainActor.innerHTML="";       //emptying the div that will be filled with data
   data.forEach(people => {
-    const {name,profile_path} = people;
+    const {name,profile_path,id} = people;
     const ActorElement = document.createElement("div");
     ActorElement.classList.add("CardActor");
-    ActorElement.innerHTML = `<img src="${imgPath + profile_path}" alt="Actor1">
-        <h2 id="Name">${name}</h2>`;
+    ActorElement.innerHTML = `<a href="/Pages/ActorDetails.html?id=${id}">
+        <img src="${imgPath + profile_path}" alt="Actor1">
+        <h2 id="Name">${name}</h2></a>`;
 
     mainActor.appendChild(ActorElement);
   });

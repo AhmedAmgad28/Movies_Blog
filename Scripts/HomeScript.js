@@ -24,12 +24,12 @@ function getMovies(Url){
 function showMovie(data){
   main.innerHTML="";    //emptying the div that will be filled with data
   data.forEach(movie => {
-    const {title,poster_path} = movie;
-    const movieElement = document.createElement("div");
-    movieElement.classList.add("Card");
-    movieElement.innerHTML = `<img src="${imgPath + poster_path}" alt="Movie1">
-        <h2 id="Name">${title}</h2>`;
-
+    const {title,poster_path,id} = movie;
+    const movieElement = document.createElement("div");     //Create Element
+    movieElement.classList.add("Card");       //Add Class to the element
+    movieElement.innerHTML = `<a href="/Pages/MovieDetails.html?id=${id}">
+    <img src="${imgPath + poster_path}" alt="Movie1">
+    <h2 id="Name">${title}</h2></a>`;
     main.appendChild(movieElement);
   });
 }

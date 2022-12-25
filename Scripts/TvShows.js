@@ -21,11 +21,12 @@ function getShows(Url){
 function showTv(data){
   mainTV.innerHTML="";   //emptying the div that will be filled with data
   data.forEach(TVShow => {
-    const {original_name,poster_path} = TVShow;    
+    const {original_name,poster_path,id} = TVShow;    
     const TvShowElement = document.createElement("div");    //Create Element
     TvShowElement.classList.add("CardTv");    //Add Class to the element
-    TvShowElement.innerHTML = `<img src="${imgPath + poster_path}" alt="TvShow1">
-        <h2 id="Name">${original_name}</h2>`;
+    TvShowElement.innerHTML = `<a href="/Pages/TvShowDetails.html?id=${id}">
+        <img src="${imgPath + poster_path}" alt="TvShow1">
+        <h2 id="Name">${original_name}</h2></a>`;
 
     mainTV.appendChild(TvShowElement);
   });

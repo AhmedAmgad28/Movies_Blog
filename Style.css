@@ -76,6 +76,7 @@ header .NavContainer{
     background-color: rgba(48, 55, 51, 0.587);
     padding: 6px;
     margin: 10px;
+    box-shadow:0px 0px 20px 0.2px rgb(114, 121, 120);
 }
 .Card img,.CardMovie img,.CardTv img,.CardActor img{
     width: 100%;
@@ -91,4 +92,94 @@ header .NavContainer{
 #Name:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+#MainContainerDetails{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(48, 55, 51, 0.422);
+    padding: 20px;
+    margin: 20px;
+    color: rgb(19, 187, 162);
+}
+#MainContainerDetails h1{
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: oblique;
+}
+#MovieDetails{
+    display: flex;
+    justify-content: space-between;
+}
+#MovieDetails img{
+    width: 450px;
+    height: 450px;
+    border: 4px rgba(48, 55, 51, 0.587) solid;
+    box-shadow:0px 0px 20px 5px rgb(19, 187, 162);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 7px;
+}
+#MovieDetails p{
+    color: rgb(211, 235, 230);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    padding-left: 40px;
+    font-style:oblique;
+}
+.Details{
+    display: block;
+    justify-content: space-between;
+}
+.SmallDetails{
+    display: flex;
+    padding-left: 120px;
+    margin: auto;
+}
+#MovieDetails h2{
+    color: rgb(66, 73, 69);
+    text-align: center;
+    background-color: rgb(19, 187, 162);
+    border-radius: 20px;
+    padding: 7px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    box-shadow:0px 0px 5px 1px rgb(19, 187, 162);
+}
+@media (max-width:1050px){
+    #MovieDetails h2{
+        display: inline;
+        font-size: 0.6rem;
+        text-align: start;
+    }
+}
+@media (max-width:950px){
+    #MovieDetails p{
+        font-size: 1rem;  
+    }
+    #MainContainerDetails h1{
+        font-size: 2rem;
+    }
+
+}
+@media (max-width:940px){
+    #MainContainerDetails {
+        display: block;
+    }
+}
+@media (max-width:816px){
+    #MovieDetails {
+        display: block;
+        margin: auto;
+    }
+    #MovieDetails h2{
+        font-size: 0.8rem;
+        text-align: start;
+        align-self: flex-start;
+    }
 }
